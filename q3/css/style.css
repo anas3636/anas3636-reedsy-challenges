@@ -1,0 +1,201 @@
+body {
+  background-color: #faf9f4;
+  font-family: sans-serif;
+}
+body .top-actions {
+  width: 100%;
+  max-width: 1000px;
+  display: block;
+  box-sizing: border-box;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+body .top-actions .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .top-actions .container .top-logo {
+  padding: 8px 80px;
+  background-color: #cccccc;
+  border-radius: 6px;
+}
+body .top-actions .container .top-menu {
+  list-style: none;
+}
+body .top-actions .container .top-menu li {
+  display: inline-block;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+body .top-actions .container .top-menu li a:hover {
+  color: #cfcccc;
+  transition: all 0.3s ease 0s;
+}
+body .top-actions .container .top-menu .active {
+  background-color: #f0bf02;
+  color: white;
+}
+body .main {
+  border-radius: 5px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  max-width: 1100px;
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #fff;
+}
+body .main .container {
+  padding-top: 0.5rem;
+}
+body .main .container h1 {
+  padding-left: 1.5rem;
+  font-size: xxx-large;
+  font-weight: normal;
+}
+body .main .container .featured-book {
+  background-color: #faf9f4;
+  padding-left: 1.5rem;
+  padding-bottom: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+body .main .container .featured-book .recommended {
+  background-color: #f0bf02;
+  width: 100%;
+  text-align: center;
+  margin-left: calc(100% - 120px);
+  color: #fff;
+  padding: 2px;
+  border-bottom-left-radius: 10px;
+}
+body .main .container .featured-book img {
+  margin: 1.5rem 1.5rem auto 0px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  width: 25%;
+  flex-grow: 1;
+}
+body .main .container .featured-book .book-info {
+  margin-right: 1.5rem;
+  margin-top: 1.5rem;
+  width: 65%;
+  flex-grow: 1;
+}
+body .main .container .featured-book .book-info .title {
+  font-weight: 900;
+  font-size: xx-large;
+  margin-top: 0px;
+  margin-bottom: 0.5rem;
+}
+body .main .container .featured-book .book-info .author {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 15.5px;
+  color: #515151;
+}
+body .main .container .featured-book .book-info .synopsis {
+  font-size: 17.5px;
+}
+body .main .container .top-voted {
+  padding: 1.5rem;
+}
+body .main .container .top-voted h2 {
+  font-size: xx-large;
+  margin-top: 0px;
+}
+body .main .container .top-voted .books-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+body .main .container .top-voted .books-list .book {
+  width: 25%;
+  background-color: #faf9f4;
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+body .main .container .top-voted .books-list .book .position span {
+  color: #f0bf02;
+  font-weight: bold;
+  border-radius: 50%;
+  border: solid;
+  border-color: #f0bf02;
+  padding: 5px 10px;
+  float: right;
+}
+body .main .container .top-voted .books-list .book img {
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+body .main .container .top-voted .books-list .book .book-info .title {
+  font-size: 19.5px;
+  margin-bottom: 0.5rem;
+}
+body .main .container .top-voted .books-list .book .book-info .author {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 15.5px;
+  color: #515151;
+}
+body .main .container .top-voted .books-list .book .book-info .synopsis {
+  font-size: 17px;
+}
+@media (max-width: 1073px) {
+  body .main .container .top-voted .books-list .book {
+    flex-basis: 33.33%;
+  }
+}
+@media (max-width: 815px) {
+  body .main .container .top-voted .books-list .book {
+    flex-basis: 50%;
+  }
+}
+@media (max-width: 555px) {
+  body .main .container .top-voted .books-list .book {
+    flex-basis: 100%;
+  }
+}
+body footer {
+  background-color: #292929;
+  position: sticky;
+  bottom: 0px;
+  left: 0px;
+}
+body footer .container {
+  width: 100%;
+  max-width: 300px;
+  display: block;
+  box-sizing: border-box;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+body footer .container ul {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body footer .container ul li {
+  display: inline-block;
+  cursor: pointer;
+  padding: 8px 12px;
+}
+body footer .container ul li a {
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
